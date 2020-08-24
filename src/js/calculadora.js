@@ -24,7 +24,10 @@ let Calculadora = {
        return num1 / num2;
     },
     multiplicar: (num1, num2) => {
-        return 0;
+        if(isNaN(num1) || isNaN(num2)){
+            return 0;
+        }
+        return num1 * num2;
     }
 };
 if(typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
